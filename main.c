@@ -4,9 +4,9 @@
 #include <string.h>
 #define T 20
 //Universidade Federal de Roraima
-//Estrutura de Dados 1 2016.2 - Trabalho Pr·tico 1, Artefato 2
-//Aluno: Talles Bezerra de AssunÁ„o
-//Sistema de catalogaÁ„o de palavras de um arquivo.txt
+//Estrutura de Dados 1 2016.2 - Trabalho Pr√°tico 1, Artefato 2
+//Aluno: Talles Bezerra de Assun√ß√£o
+//Sistema de cataloga√ß√£o de palavras de um arquivo.txt
 
 int main()
 {
@@ -22,9 +22,9 @@ int main()
     while(!feof(f)){//PERCORRE O ARQUIVO ATE O FINAL
         dicionario[j] = criarlista();//CRIA UMA LISTA NO ELEMENTO CORRESPONDENTE AO CONTADOR DO INDECE
         fscanf(f,"%s",aux);//ADICIONA A PRIMEIRA PALAVRA DO ARQUIVO A VARIAVEL AUXILIAR
-        strlwr(aux);
+        strlwr(aux);//CONVERTE TODA A STRING PARA LETRAS MIN√öSCULAS
         busca = buscarPalavra(dicionario,&aux,j);//VERIFICA DE A PALAVRA EXISTE NO VETOR
-        if(busca==1){//SE N√O EXISTE, ADICIONA A PALAVRA E SOMA 1 AO CONTADOR DE INDICE
+        if(busca==1){//SE N√ÉO EXISTE, ADICIONA A PALAVRA E SOMA 1 AO CONTADOR DE INDICE
             dicionario[j] = inserirPalavra(dicionario[j],aux);
             j++;
         }
