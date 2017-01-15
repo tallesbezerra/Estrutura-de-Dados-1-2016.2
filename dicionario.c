@@ -23,7 +23,7 @@ lista* inserir(lista *l, int linha, int quant){
     if(l==NULL){
         l = novo;
     }
-    //SE N√O, PERCORRE ATE O ULTIMO ELEMETO E ATRIBUI A REFERENCIA DO NOVO AO ELEMENTO->PROXIMO
+    //SE N√ÉO, PERCORRE ATE O ULTIMO ELEMETO E ATRIBUI A REFERENCIA DO NOVO AO ELEMENTO->PROXIMO
     else{
         lista* aux;
         for(aux=l;aux->proximo!=NULL;aux=aux->proximo){}
@@ -40,8 +40,8 @@ void liberarlista(lista *l){
     }
 }
 int buscarPalavra(lista *l[], char* p, int i){
-    //PASSA A REFERENCIA DO VETOR DE PALAVRAS E COMPARA COM AS QUE JA ENT√O ADICIONADAS
-    //SE A PALAVRA N√O FOI ENCONTRADA RETORNA 1, SE FOI RETORNA 0
+    //PASSA A REFERENCIA DO VETOR DE PALAVRAS E COMPARA COM AS QUE JA ENT√ÉO ADICIONADAS
+    //SE A PALAVRA N√ÉO FOI ENCONTRADA RETORNA 1, SE FOI RETORNA 0
     int j;
     for(j=0;j<i;j++){
         if(l[j] == NULL)
@@ -61,8 +61,8 @@ void verificarPalavra(lista *l, char palavra[20]){
     char aux[20],ch;
     int contp=0,contl=0;
     while(!feof(f)){
-        fscanf(f,"%s",aux);//PEGA UMA STRING AT… ENCONTRA UM ESPACO OU \N
-        strlwr(aux);
+        fscanf(f,"%s",aux);//PEGA UMA STRING AT√â ENCONTRA UM ESPACO OU \N
+        strlwr(aux);//CONVERTE TODA A STRING PARA LETRAS MIN√öSCULAS
         ch = fgetc(f);//PEGA O PROXIMO CARACTER, ESPACO OU \N
         if(!strcmp(palavra,aux)){//SE FOR IGUAL A PALAVRA PASSADA, SOMA 1 NO CONTADOR DE PALAVRAS
             contp++;
