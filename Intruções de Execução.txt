@@ -1,0 +1,19 @@
+Intruções - Trabalho Prático 1 - Artefato 2
+* Projeto desenvolvido na IDE Code Blocks 16.01
+* Os Arquivos main.c, dicionario.c e dicionario.h devem ser
+adicionados em um projeto C.
+* O programa converte toda a palavra para minúscula
+
+Intruções para o arquivo lido(palavras.txt):
+	* Deve ser mantido no mesmo local onde projeto está salvo.
+	* Não deve possuir mais de 1 espaço entre uma palavra e outra
+	ou no final da linha.
+	* Apenas serão contadas as linhas com palavras, não devendo
+	haver linhas vazias no meio do texto.
+	* A última linha deve ser vazia, contendo um Enter após a última
+	linha com palavras.
+
+Fontes:
+http://www.cprogressivo.net/2013/10/Operacoes-com-arquivos-FILE-fopen-modos-de-abertura-fechamento-modo-texto-binario-EOF-fclose-fcloseall.html
+http://www.cprogressivo.net/2013/11/Como-ler-arquivos-em-C-As-funcoes-fgetc-fscanf-fgets.html
+https://pt.wikibooks.org/wiki/Programar_em_C/Entrada_e_sa%C3%ADda_em_arquivos
