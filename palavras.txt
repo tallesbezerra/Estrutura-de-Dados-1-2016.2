@@ -1,6 +1,6 @@
-carro roupa porta bone bone
+carro roupa porta BONE bone
 asa casa carro casa asa
 celular roupa bone carro casa celular celular
 carro mesa asa porta
-porta bone celular
+porta bone Celular
 bone mesa asa porta carro casa roupa
